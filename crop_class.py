@@ -76,13 +76,14 @@ def display_menu():
     print("3. Report status")
     print("0. Exit test program")
     print()
+    print("Please select an option from the above menu")
 
 
 def get_menu_choice():
     option_valid = False
     while not option_valid:
         try:
-            choice = int(input("Please select an option from the above menu >>> "))
+            choice = int(input("option choice >>> "))
             if 0 <= choice <= 4:
                 option_valid = True
             else:
