@@ -8,7 +8,7 @@ class Wheat(Crop):
         self._type = "Wheat"
 
     def grow(self,light,water):
-        if light >= light_need and water >= water_need:
+        if light >= self._light_need and water >= self._water_need:
             if self._status == "Seedling":
                 self._growth += self._growth_rate * 1.5
             elif self._status == "Young":
