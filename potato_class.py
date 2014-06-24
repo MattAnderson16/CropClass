@@ -26,10 +26,10 @@ class Potato(Crop):
 def main():
     #create a new potato crop
     potato_crop = Potato()
-    print(potato_crop.report())
+    print(potato_crop._report())
     #manually grow the crop
     manual_grow(potato_crop)
-    print(potato_crop.report())
+    print(potato_crop._report())
 
 if __name__ == "__main__":
     main()

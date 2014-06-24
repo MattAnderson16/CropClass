@@ -4,7 +4,7 @@ class Wheat(Crop):
     """A wheat crop"""
 
     def __init__(self):
-        super().__init__(growth_rate,light_need,water_need)
+        super().__init__(1,4,5)
         self._type = "Wheat"
 
     def grow(self,light,water):

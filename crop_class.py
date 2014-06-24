@@ -15,7 +15,7 @@ class Crop:
         #These attributes are private and are only accessed from within the class
 
     def needs(self):
-        return {"light need":self._light_need,"water_need":self._water_need}
+        return {"light need":self._light_need,"water need":self._water_need}
 
     def report(self):
         return {"type":self._type,"status":self._status,"growth":self._growth,"days growing":self._days_growing}
