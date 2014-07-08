@@ -17,12 +17,6 @@ class Sheep(Animal):
             elif self._status == "Adult" and water >= self._water_need and food >= self._food_need:
                 self._weight += self._growth_rate
             elif self._status == "Old" and water >= self._water_need and food >= self._food_need:
-                self.weight += self._growth_rate * 0.75
+                self._weight += self._growth_rate * 0.75
         self._days_growing += 1
         self._update_status()
-
-if __name__ == "__main__":
-    Sheep = Sheep("Shaun")
-    print(Sheep._report())
-    manual_grow(Sheep)
-    print(Sheep._report())
